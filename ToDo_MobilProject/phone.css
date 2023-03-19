@@ -3,9 +3,6 @@
   padding: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
-/*   body {
-    background-color: pink;
-  } */
 
   .container {
     display: flex;
@@ -105,9 +102,6 @@
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
-/*   body {
-    background-color: yellow;
-  } */
   .bigBackground {
     width: 100vw;
   }
