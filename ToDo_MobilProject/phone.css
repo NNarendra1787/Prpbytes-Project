@@ -3,6 +3,7 @@
   padding: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
+ 
 
   .container {
     display: flex;
@@ -102,6 +103,7 @@
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
+
   .bigBackground {
     width: 100vw;
   }
@@ -118,10 +120,10 @@
   }
 
   #plus {
-    position: absolute;
-    top: 5%;
-    left: 60%;
-    width: 390px;
+    position: fixed;
+    top: 120px;
+    right: 100px;
+    width: 200px;
   }
   h3 {
     padding: 12px 10px;
@@ -196,5 +198,10 @@
     top: 145px;
     right: 425px;
     width: 100vw;
+  }
+  
+  #MixThing{
+    position: absolute;
+    left: 426px;
   }
 }
