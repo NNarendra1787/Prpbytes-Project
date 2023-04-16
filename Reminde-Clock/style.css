@@ -1,38 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #3D087B;
     margin: 2% 0%;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-evenly;
 }
+
 /* Left side grid */
-.timeset{
+.timeset {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 1rem;
 }
-.clock{
+
+.clock {
     grid-area: 1/1/1/6;
 }
-#leftgird{
+
+#leftgird {
     grid-area: 2/1/5/6;
 }
-#DownText{
+
+#DownText {
     grid-area: 5/1/6/6;
 }
-.Alarm{
+
+.Alarm {
     grid-area: 6/1/7/5;
 }
-#Scadule{
+
+#Scadule {
     grid-area: 6/5/7/8;
 }
+
 /* Mid Compex */
-.firstgrid{
+.firstgrid {
     width: 130%;
     padding: 2% 2%;
     display: flex;
@@ -45,8 +54,9 @@ body{
     /* grid-template-columns: repeat(4, auto); */
     /* grid-gap: 1rem; */
 }
+
 /* item1 */
-#item1{
+#item1 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -57,13 +67,15 @@ body{
     left: 0px;  */
     /* border-left: 2px solid purple; */
 }
-#item1 img{
+
+#item1 img {
     display: block;
     /* position: absolute;
     top: 0px;
     left: 0px; */
 }
-#item1 p{
+
+#item1 p {
     width: 60%;
     margin: 2% 3%;
     text-align: justify;
@@ -73,7 +85,8 @@ body{
     top: 0px;
     left: 60px; */
 }
-#wake{
+
+#wake {
     width: 80%;
     padding: 1% 0%;
     padding-right: 10%;
@@ -88,20 +101,21 @@ body{
 }
 
 /* Item2 */
- #item2{
+#item2 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#item2 img{
+#item2 img {
     display: block;
     /* position: absolute;
     top: 0px;
     left: 0px; */
 }
-#item2 p{
+
+#item2 p {
     text-align: justify;
     width: 60%;
     margin: 2% 3%;
@@ -110,7 +124,8 @@ body{
     top: 0px;
     left: 60px; */
 }
-#lunch{
+
+#lunch {
     width: 80%;
     padding: 1% 0%;
     padding-right: 10%;
@@ -120,23 +135,24 @@ body{
     /* position: absolute;
     top: 0px;
     right: 0px; */
-} 
+}
 
 /* Item3 */
- #item3{
+#item3 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#item3 img{
+#item3 img {
     display: block;
     /* position: absolute;
     top: 0px;
     left: 0px; */
 }
-#item3 p{
+
+#item3 p {
     text-align: justify;
     width: 60%;
     margin: 2% 3%;
@@ -145,7 +161,8 @@ body{
     top: 0px;
     left: 60px; */
 }
-#nap{
+
+#nap {
     width: 80%;
     padding: 1% 0%;
     padding-right: 10%;
@@ -155,25 +172,28 @@ body{
     /* position: absolute;
     top: 0px;
     right: 0px; */
-} 
+}
 
-#item4{
+#item4 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#img{
+
+#img {
     display: block;
-    
+
 }
-#item4 p{
+
+#item4 p {
     text-align: justify;
     width: 60%;
     margin: 2% 3%;
     color: #3D087B;
 }
-#night{
+
+#night {
     width: 80%;
     padding: 1% 0%;
     padding-right: 10%;
@@ -183,11 +203,11 @@ body{
 }
 
 /* .boder{  */
-    /* border-left: 2px solid red; */
- /* } */
+/* border-left: 2px solid red; */
+/* } */
 
- /* Changing text */
- #DownText{
+/* Changing text */
+#DownText {
     box-sizing: border-box;
     width: 135%;
     color: #ffffff;
@@ -195,14 +215,14 @@ body{
     background-color: #845bc7;
     padding: 3% 8%;
     border-radius: 12px;
- }
+}
 
- /* .Alarm{ */
-     /* width: 100%; */
-      /* box-sizing: border-box; */
-     /* margin: 0px 3px; */
-    /* }   */
- #btn{
+/* .Alarm{ */
+/* width: 100%; */
+/* box-sizing: border-box; */
+/* margin: 0px 3px; */
+/* }   */
+#btn {
     height: 40%;
     width: 25vw;
     font-size: 18px;
@@ -210,12 +230,14 @@ body{
     color: #ffffff;
     border: 1px solid #ededed;
     border-radius: 6px;
-    background-image: linear-gradient(to right,#6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
- }
- #btn:hover{
-    background-image: linear-gradient(to right,#F1A7C5, #FC5EFF , #CB52F8, #6E54EC,);
- }
-#Scadule{
+    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
+}
+
+#btn:hover {
+    background-image: linear-gradient(to right, #F1A7C5, #FC5EFF, #CB52F8, #6E54EC, );
+}
+
+#Scadule {
     box-sizing: border-box;
     width: 14vw;
     padding: 1% 1%;
@@ -224,9 +246,10 @@ body{
     border: 1px solid #ffffff;
     border-radius: 8px;
 }
+
 /* right side grid main  */
 
-.Secondgrid{
+.Secondgrid {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 1rem;
@@ -234,35 +257,39 @@ body{
     top: 0px;
     left: 0px;
 }
-.time{
+
+.time {
     grid-area: 1/1/1/5;
 }
-.setTime{
+
+.setTime {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #3D087B;
     /* font-size: 1.2rem; */
 }
+
 /* .time img{
     display: block;
     /* height: 25px; */
-    /* width: 75px;
+/* width: 75px;
     z-index: 1px;
     position: relative;
     top: 0px;
     left: 5px; */
 
 /* } */
-#midText{
+#midText {
     grid-area: 3/1/4/5;
 }
-#ChangePhoto{
+
+#ChangePhoto {
     grid-area: 4/1/7/5;
 }
 
 /* right working part */
-.time{
+.time {
     display: flex;
     justify-content: space-evenly;
     padding: 2% 2%;
@@ -275,28 +302,30 @@ body{
     top: 0px;
     left: 0px;
 }
+
 /* .time{
     font-size: 1.5rem;
 } */
 /* #time{
     font-size: 2.9rem;
     /* font-size: 3.1rem; */
-    /* position: absolute;
+/* position: absolute;
     top: 25px;
     left: 154px;
     word-spacing: 7px;
     text-align: center;
     z-index: 2;
 }  */
-#midText{
+#midText {
     border: 1px solid #ededed;
     padding: 3% 3%;
     border-radius: 8px;
     background-color: #ffffff;
     color: #8E53F0;
 }
+
 /* blank box */
-.me1{
+.me1 {
     box-sizing: border-box;
     grid-area: 1/3/1/4;
     height: 50%;
@@ -311,7 +340,8 @@ body{
     z-index: -1;
     opacity: 0.6;
 }
-.me2{
+
+.me2 {
     box-sizing: border-box;
     grid-area: 1/3/1/4;
     height: 50%;
@@ -328,14 +358,16 @@ body{
 }
 
 /* Border */
-.bord{
+.bord {
     height: 30px;
-    border-left: 3px solid #3D087B;;
+    border-left: 3px solid #3D087B;
+    ;
     position: relative;
     top: 0px;
     left: 15px;
 }
-#moon{
+
+#moon {
     font-size: 25px;
     color: #3d087b;
 }
@@ -346,27 +378,31 @@ body{
     width: 80px;
 } */
 
-.medo{
+.medo {
     position: relative;
     top: 50px;
     left: 0px;
     z-index: 2;
 }
-.setTime h3{
+
+.setTime h3 {
     font-size: 2.3rem;
-    
+
 }
-.backimg{
+
+.backimg {
     position: relative;
     bottom: 25px;
     z-index: 1;
 }
-.backimgs{
+
+.backimgs {
     position: relative;
     bottom: 16px;
     z-index: 1;
 }
-#col{
+
+#col {
     position: relative;
     width: 0px;
     height: 18px;
@@ -375,7 +411,7 @@ body{
     color: #3D087B;
 }
 
-#ChangePhoto img{
+#ChangePhoto img {
     display: block;
     width: 96%;
 }
@@ -385,7 +421,7 @@ body{
 
 /* Media Querie */
 @media screen and (min-width: 320px) and (max-width: 720px) {
-    .container{
+    .container {
         display: grid;
         grid-template-rows: repeat(6, auto);
         position: relative;
@@ -396,7 +432,8 @@ body{
         /* flex-direction: column; */
         grid-gap: 2rem;
     }
-    .clock{
+
+    .clock {
         position: absolute;
         top: 10px;
         left: 0px;
@@ -404,41 +441,46 @@ body{
         /* grid-area: 1/1/1/5; */
 
     }
-    .time{
+
+    .time {
         /* grid-area: 2/1/2/5; */
         position: absolute;
-        top: 90px;
-        left: 0px;
-        width: 95%;
+        left: -15%;
+        width: 110%;
     }
-    #midText{
+
+    #midText {
         /* grid-area: 3/1/3/5; */
         position: absolute;
         top: 225px;
-        left: 0px;
-        width: 95%;
+        left: -15%;
+        width: 104%;
     }
-    .firstgrid{
+
+    .firstgrid {
         /* grid-area: 4/1/6/5; */
         /* z-index: 1; */
         position: absolute;
-        top: 340px;
+        top: 350px;
         left: 0px;
         width: 95%;
     }
-    #DownText{
+
+    #DownText {
         position: absolute;
         top: 255px;
         z-index: 1;
         left: 0px;
         width: 90%;
     }
-    .Alarm{
+
+    .Alarm {
         position: absolute;
         top: 335px;
         left: 0px;
     }
-    #Scadule{
+
+    #Scadule {
         position: absolute;
         top: 335px;
         right: 20px;
@@ -446,7 +488,7 @@ body{
         z-index: 2;
     }
 
-    #ChangePhoto img{
+    #ChangePhoto img {
         display: block;
         position: relative;
         top: 905px;
@@ -456,3 +498,84 @@ body{
 
 }
 
+/* Tab View  */
+@media screen and (min-width: 720px) and (max-width: 900px) {
+    .container {
+        display: grid;
+        /* grid-template-columns: repeat(5, auto); */
+        /* grid-template-rows: repeat(6, auto); */
+        position: relative;
+        top: 0px;
+        left: 0px;
+        /* grid-template-columns: repeat(4, auto); */
+        /* display: flex; */
+        /* flex-direction: column; */
+        grid-gap: 2rem;
+    }
+
+    .clock {
+        position: absolute;
+        top: 10px;
+        right: 13%;
+        width: 100%;
+        /* grid-area: 1/1/1/5; */
+
+    }
+
+    .time {
+        /* grid-area: 2/1/2/5; */
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        width: 100%;
+    }
+
+    #midText {
+        /* grid-area: 3/1/3/5; */
+        position: absolute;
+        top: 225px;
+        left: 0px;
+        width: 95%;
+    }
+
+    .firstgrid {
+        /* grid-area: 4/1/6/5; */
+        /* z-index: 1; */
+        position: absolute;
+        top: 409px;
+        right: 10%;
+        width: 100%;
+    }
+
+    #DownText {
+        position: absolute;
+        top: 855px;
+        z-index: 1;
+        right: 19%;
+        width: 97%;
+    }
+
+    .Alarm {
+        position: absolute;
+        top: 975px;
+        right: 50%;
+        width: 65%;
+    }
+
+    #Scadule {
+        position: absolute;
+        top: 945px;
+        right: 20px;
+        width: 40%;
+        z-index: 2;
+    }
+
+    #ChangePhoto img {
+        display: block;
+        position: relative;
+        top: 1000px;
+        right: 19%;
+        width: 140%;
+    }
+
+}
