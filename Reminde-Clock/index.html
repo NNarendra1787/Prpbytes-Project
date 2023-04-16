@@ -34,7 +34,7 @@
                         <option value="08">08 AM - 09AM</option>
                         <option value="09">09 AM - 10AM</option>
                         <option value="10">10 AM - 11AM</option>
-                        <option value="11">11 AM - 12AM</option>
+                        <option value="11">11 AM - 12PM</option>
                         <option value="12">12 PM - 01PM</option>
                         <option value="13">01 PM - 02PM</option>
                         <option value="14">02 PM - 03PM</option>
@@ -68,7 +68,7 @@
                         <option value="08">08 AM - 09AM</option>
                         <option value="09">09 AM - 10AM</option>
                         <option value="10">10 AM - 11AM</option>
-                        <option value="11">11 AM - 12AM</option>
+                        <option value="11">11 AM - 12PM</option>
                         <option value="12">12 PM - 01PM</option>
                         <option value="13">01 PM - 02PM</option>
                         <option value="14">02 PM - 03PM</option>
@@ -101,7 +101,7 @@
                         <option value="08">08 AM - 09AM</option>
                         <option value="09">09 AM - 10AM</option>
                         <option value="10">10 AM - 11AM</option>
-                        <option value="11">11 AM - 12AM</option>
+                        <option value="11">11 AM - 12PM</option>
                         <option value="12">12 PM - 01PM</option>
                         <option value="13">01 PM - 02PM</option>
                         <option value="14">02 PM - 03PM</option>
@@ -134,7 +134,7 @@
                         <option value="08">08 AM - 09AM</option>
                         <option value="09">09 AM - 10AM</option>
                         <option value="10">10 AM - 11AM</option>
-                        <option value="11">11 AM - 12AM</option>
+                        <option value="11">11 AM - 12PM</option>
                         <option value="12">12 PM - 01PM</option>
                         <option value="13">01 PM - 02PM</option>
                         <option value="14">02 PM - 03PM</option>
@@ -155,13 +155,13 @@
                 <h1 id="Greeting">GOOD MORNING!! WAKE UP!!</h1>
             </div>
             <div class="Alarm">
-                <button id="btn" onmouseenter="changeAlarm()" onmouseleave="backAlarm()" onclick="clickMe()" >Set Alarm</button>
+                <button id="btn" onclick="clickMe()", onmouseenter="changeAlarm()" , onmouseleave="backAlarm()"  >Set Alarm</button>
             </div>
             <div id="Scadule">
                 <p>Wake Up Time: <span class="store"> 10AM - 11AM</span></p>
                 <p>Lunch Time: <span class="store"> 12PM - 1PM</span></p>
                 <p>Nap Time: <span class="store"> 4AM - 5AM</span></p>
-                <p>Wake Up Time: <span class="store"> 8AM - 9AM</span></p>
+                <p>Night Time: <span class="store"> 8AM - 9AM</span></p>
             </div>
         </section>
         <div class="Secondgrid">
@@ -188,9 +188,10 @@
                     <h3 id="APM" class="medo"></h3>
                     <img src="./img/AM_svg.svg" alt="" class="backimgs">
                 </div>
-            </div>
-            <div class="me1"></div>
+                <div class="me1"></div>
             <div class="me2"></div>
+            </div>
+            
             <div id="midText">
                 <h2 id="change">GRAB SOME HEALTHY BREAKFAST!</h2>
             </div>
