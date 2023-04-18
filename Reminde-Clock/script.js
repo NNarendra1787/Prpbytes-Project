@@ -99,8 +99,8 @@ function clickMe() {
         let OneText = document.getElementById("Greeting");
         OneText.innerHTML = "GOOD MORNING!! WAKE UP!!";
 
-        let TwoText = document.getElementById("change");
-        TwoText.innerHTML="GRAB SOME HEALTHY BREAKFAST!";
+        // let TwoText = document.getElementById("change");
+        // TwoText.innerHTML="GRAB SOME HEALTHY BREAKFAST!";
 
         let  ChangePhoto = document.getElementById("myphoto");
         ChangePhoto.src = "./img/Component 30 – 1.svg";
@@ -112,8 +112,8 @@ function clickMe() {
         const OneText = document.getElementById("Greeting");
         OneText.innerHTML = "GOOD AFTERNOON!! TAKE SOME SLEEP!!"
 
-        const TwoText = document.getElementById("change");
-        TwoText.innerHTML="LET'S HAVE SOME LUNCH!";
+        // const TwoText = document.getElementById("change");
+        // TwoText.innerHTML="LET'S HAVE SOME LUNCH!";
 
         const  ChangePhoto = document.getElementById("myphoto");
         ChangePhoto.src = "./img/Group 5183.svg";
@@ -124,8 +124,8 @@ function clickMe() {
         const OneText = document.getElementById("Greeting");
         OneText.innerHTML = "GOOD EVENING !!"
 
-        const TwoText = document.getElementById("change");
-        TwoText.innerHTML="STOP YAWNING, GET SOME TEA... IT JUST EVENING!";
+        // const TwoText = document.getElementById("change");
+        // TwoText.innerHTML="STOP YAWNING, GET SOME TEA... IT JUST EVENING!";
 
         const  ChangePhoto = document.getElementById("myphoto");
         ChangePhoto.src = "./img/lunch_image.png";
@@ -138,8 +138,8 @@ function clickMe() {
         const OneText = document.getElementById("Greeting");
         OneText.innerHTML = "GOOD NIGHT!!"
 
-        const TwoText = document.getElementById("change");
-        TwoText.innerHTML="CLOSE YOUR EYES AND GO TO SLEEP";
+        // const TwoText = document.getElementById("change");
+        // TwoText.innerHTML="CLOSE YOUR EYES AND GO TO SLEEP";
 
         const  ChangePhoto = document.getElementById("myphoto");
         ChangePhoto.src = "./img/Group 5194.svg";
