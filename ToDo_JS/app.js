@@ -4,7 +4,8 @@ clickable.addEventListener("click", ToggleTaskModal);
 var boxIndex = -1; // global
 var singleTaskIndex = -1;
 
-
+let myText = document.querySelector(".cheit");
+myText.innerText = "No item in the Todo List";
 
 // Task #1 : If item is entered , store it into an array of objects
 Todos = [
@@ -51,12 +52,13 @@ function ToggleTaskModal() {
   // console.log(modal.style.display);
   if (modal.style.display === "block") {
     modal.style.display = "none";
-  } else {
+    myText.innerText="";
+  } 
+  else {
     modal.style.display = "block";
+    myText.innerText="";
   }
   taskInput.focus();
-  const check = document.querySelector("cheit");
-  check.innerHTML= "";
 }
 
 function ToggleSingelTaskModal() {
@@ -69,6 +71,7 @@ function ToggleSingelTaskModal() {
     modal.style.display = "block";
   }
   // taskInput.focus();
+
 }
 
 function ToggleItemModal() {
@@ -115,6 +118,7 @@ function addItem() {
   const newItemObject = { name: itemInput.value, isCompleted: false };
   Todos[boxIndex].items.push(newItemObject);
   renderItems();
+  ShowItem();
   ToggleItemModal();
 }
 
@@ -126,15 +130,6 @@ function renderItems() {
   // Each time the RenderItems Function is called , it will empty the taskcontainer
   const taskContainer = document.getElementById("taskContainer");
   taskContainer.innerHTML = "";
-//  const takeit =  document.querySelector(".cheit");
-//  takeit.innerHTML="Not working ";
-//   if (taskContainer.style.display = 'none') {
-//     takeit.style.display = "block";
-//   }
-//   else{
-//     takeit.style.display = "none";
-//   }
-
 
   for (var i = 0; i <= Todos.length - 1; i++) {
     var value = Todos[i];
@@ -147,6 +142,7 @@ function renderItems() {
     const taskTitle = document.createElement("h2");
     taskTitle.classList.add("taskTitle");
     taskCard.appendChild(taskTitle);
+    
 
     taskTitle.addEventListener("click", ()=>{
       ToggleSingelTaskModal();
@@ -156,16 +152,10 @@ function renderItems() {
 
       // taskCard.parentElement.id;
       document.getElementById("box").innerHTML= taskCard.innerHTML
-      checking();
-      // console.log("index:", singleTaskIndex);
-
+     
     });
     taskTitle.innerText = value.name;
-
-    const Hrline = document.createElement("hr");
-    Hrline.classList.add('myHrline');
-    // taskCard.appendChild(Hrline);
-
+    
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("buttonContainer");
 
@@ -224,36 +214,11 @@ function renderItems() {
     });
 
     taskContainer.appendChild(taskCard);
-    // taskCard.appendChild(taskTitle);
-    // taskCard.appendChild(Hrline);
     taskCard.appendChild(itemList);
     taskCard.appendChild(buttonContainer);
-    // taskCard.appendChild(delBtn);
-    // taskCard.appendChild(addBtn);
   }
+  // ShowItem();
 }
-function checking(){
-  value.items.map((item) => {
+function ShowItem(){
 
-    const markbtn = document.createElement("p");
-    markbtn.innerText = "Mark done";
-    // markbtn.style.display = "inline";
-    markbtn.classList.add("markBtn");
-
-    const item1 = document.createElement("li");
-    item1.innerText = item.name;
-
-    item1.appendChild(markbtn);
-    markbtn.addEventListener("click", () => {
-      item.isCompleted = !item.isCompleted;
-      renderItems();
-    });
-    if (item.isCompleted) {
-      item1.style.textDecoration = "line-through";
-      item1.style.color = "red";
-      markbtn.style.display = "none";
-    }
-    // itemList.appendChild(item1);
-  });
 }
-// checking();
