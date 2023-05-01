@@ -204,8 +204,8 @@ li{
 #box{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 220px;
-  height: 330px;
+  min-width: 220px;
+  min-height: 330px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -217,7 +217,8 @@ li{
 }
 
 .cheit{
-  color: red;
+  color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
+  margin: 0px 100px;
 }
