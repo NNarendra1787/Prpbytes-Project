@@ -133,8 +133,6 @@ h1{
   justify-content: space-evenly;
   gap: 20px;
   padding: 20px;
-  
-  /* background-color: black; */
 }
 
 .taskCard {
@@ -146,8 +144,6 @@ h1{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  /* position: absolute; */
-  /* z-index: -1; */
 }
 
 .taskTitle {
@@ -155,15 +151,6 @@ h1{
   text-align: center;
   padding-bottom: 20px;
   border-bottom: solid 5px red;
-}
-.myHrline{
-  background-color: black;
-  /* color: black; */
-  border: none;
-  height: 1px;
-  /* position: absolute; */
-  /* z-index: 2; */
-  /* font-size: 40px; */
 }
 li{
   list-style: none;
@@ -177,23 +164,15 @@ li{
   /* display: block; */
   width: 30px;
   height: 30px;
-  /* position: absolute;
-  bottom: 50px;
-  right: 25px; */
-  /* left: 185px; */
   margin: 0px 5px;
 }
 .bin-icon{
-  /* display: block; */
   width: 30px;
   height: 30px;
   margin: 0px 5px;
-  /* position: absolute;
-  bottom: 50px;
-  right: 60px; */
+  
 }
 .markBtn{
-  /* display: inline-block; */
   display: inline;
   color: white;
   background-color: blue;
@@ -204,18 +183,12 @@ li{
 }
 
 #box{
-  /* background-color: white; */
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  /* min-width: 220px; */
-  /* min-height: 330px; */
-  /* border-radius: 15px; */
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* padding: 10px; */
 }
 
 .cheit{
