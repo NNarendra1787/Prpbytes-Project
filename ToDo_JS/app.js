@@ -161,8 +161,9 @@ function renderItems() {
       // find the index of the element to be deleted from Todos Array
       const delIndex = delBtn.parentElement.parentElement.id;
       removeValueAtIndex(delIndex);
-      renderSingleItem();
       renderItems();
+      renderSingleItem();
+      
     });
 
     buttonContainer.appendChild(delBtn);
