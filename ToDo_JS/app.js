@@ -103,6 +103,7 @@ function renderSingleItem() {
   const singleTask = 
   document.getElementsByClassName("taskCard")[singleTaskIndex];
   singleContainer.appendChild(singleTask);
+  renderItems();
 }
 
 // This Function displays all the data in athe Todos Array
@@ -203,5 +204,4 @@ function renderItems() {
     taskCard.appendChild(itemList);
     taskCard.appendChild(buttonContainer);
   }
-  // ShowItem();
 }
