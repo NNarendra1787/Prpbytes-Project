@@ -12,38 +12,12 @@ Todos = [
   // Each Object inside Todos[] , represents an Task with 2 properties :
   // 1. Name of the Task
   // 2. Array of Items
-  {
-      name: "Task1",
-      items: [
-          // Each Object represents an Item with 2 properties
-          // 1. Name of the Item
-          // 2. Status of the Item
-          { name: "item00", isCompleted: false },
-          { name: "item01", isCompleted: false },
-          { name: "item02", isCompleted: false },
-        ],
-      },
-      {
-          name: "Task2",
-          items: [
-      { name: "item10", isCompleted: false },
-      { name: "item11", isCompleted: false },
-      { name: "item12", isCompleted: false },
-    ],
-  },
-  // {
-    //   name: "Task3",
-  //   items: [
-  //     { name: "item20", isCompleted: false },
-  //     { name: "item21", isCompleted: false },
-  //     { name: "item22", isCompleted: false },
-  //   ],
-  // },
 ];
 
 // Todos is an Array that will store all Tasks.
 
 renderItems();
+// renderSingleItem();
 function ToggleTaskModal() {
   const taskInput = document.getElementById("task-input");
   taskInput.value = "";
@@ -71,7 +45,7 @@ function ToggleSingelTaskModal() {
     modal.style.display = "block";
   }
   // taskInput.focus();
-
+  renderItems();
 }
 
 function ToggleItemModal() {
@@ -118,8 +92,17 @@ function addItem() {
   const newItemObject = { name: itemInput.value, isCompleted: false };
   Todos[boxIndex].items.push(newItemObject);
   renderItems();
-  ShowItem();
   ToggleItemModal();
+  renderSingleItem();
+}
+function renderSingleItem() {
+  // const modal = document.getElementById("box");
+  const singleContainer = document.getElementById("box");
+  singleContainer.innerHTML= "";
+
+  const singleTask = 
+  document.getElementsByClassName("taskCard")[singleTaskIndex];
+  singleContainer.appendChild(singleTask);
 }
 
 // This Function displays all the data in athe Todos Array
@@ -146,13 +129,10 @@ function renderItems() {
 
     taskTitle.addEventListener("click", ()=>{
       ToggleSingelTaskModal();
-
       singleTaskIndex = taskTitle.parentElement.id;
       document.getElementById("single-task-name").innerText = Todos[singleTaskIndex].name;
-
-      // taskCard.parentElement.id;
-      document.getElementById("box").innerHTML= taskCard.innerHTML
-     
+      renderSingleItem();
+      // renderItems();
     });
     taskTitle.innerText = value.name;
     
@@ -180,6 +160,7 @@ function renderItems() {
       // find the index of the element to be deleted from Todos Array
       const delIndex = delBtn.parentElement.parentElement.id;
       removeValueAtIndex(delIndex);
+      renderSingleItem();
       renderItems();
     });
 
@@ -190,6 +171,7 @@ function renderItems() {
     itemList.style.flex = "1";
     itemList.style.lineHeight = "35px";
 
+    var k = 0;
     value.items.map((item) => {
 
       const markbtn = document.createElement("p");
@@ -199,11 +181,15 @@ function renderItems() {
 
       const item1 = document.createElement("li");
       item1.innerText = item.name;
-
+      item1.id = k++;
       item1.appendChild(markbtn);
+
       markbtn.addEventListener("click", () => {
         item.isCompleted = !item.isCompleted;
         renderItems();
+        if(!(singleTaskIndex === -1)){
+          renderSingleItem();
+        }
       });
       if (item.isCompleted) {
         item1.style.textDecoration = "line-through";
@@ -218,7 +204,4 @@ function renderItems() {
     taskCard.appendChild(buttonContainer);
   }
   // ShowItem();
-}
-function ShowItem(){
-
 }
