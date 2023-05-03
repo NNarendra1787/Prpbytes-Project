@@ -153,6 +153,8 @@ h1{
 .taskTitle {
   color: firebrick;
   text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 5px red;
 }
 .myHrline{
   background-color: black;
@@ -202,11 +204,11 @@ li{
 }
 
 #box{
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-width: 220px;
-  min-height: 330px;
-  border-radius: 15px;
+  /* background-color: white; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* min-width: 220px; */
+  /* min-height: 330px; */
+  /* border-radius: 15px; */
   display: flex;
   flex-direction: column;
   position: absolute;
