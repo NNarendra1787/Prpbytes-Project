@@ -217,9 +217,7 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1490px){
-  body{
-    background-color: pink;
-  }
+
   .container{
     position: relative;
     right: 62px;
