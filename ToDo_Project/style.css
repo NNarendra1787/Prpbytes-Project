@@ -35,7 +35,7 @@ header span{
     position: absolute;
     top: 40px;
     right: 478px;
-    /* margin: 30px 0px; */
+    margin: 0px -115px;
     cursor: pointer;
     font-size: 33px;
 }
@@ -59,7 +59,7 @@ a{
     justify-content: center;
     margin: 10px auto; */
     width: 87%;
-    margin: 80px auto;
+    margin: 80px 195px;
 }
 /* box items */
 .size{
