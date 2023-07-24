@@ -128,6 +128,7 @@ h1{
 }
 
 .taskContainer {
+  /* width: 80%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -144,6 +145,7 @@ h1{
   display: flex;
   flex-direction: column;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .taskTitle {
@@ -151,6 +153,8 @@ h1{
   text-align: center;
   padding-bottom: 20px;
   border-bottom: solid 5px red;
+  overflow: hidden; 
+  overflow-wrap: anywhere;
 }
 li{
   list-style: none;
