@@ -10,7 +10,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: center; */
+    position: relative;
+    right: 164px;
+    justify-content: center;
   }
 
   .size {
@@ -109,6 +111,7 @@
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
 
+ 
   .bigBackground {
     width: 100vw;
   }
@@ -116,9 +119,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     width: 100vw;
+    position: relative;
+    right: 195px;
   }
   .size {
     width: 28%;
@@ -208,5 +213,20 @@
   #MixThing{
     position: absolute;
     left: 426px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1490px){
+  body{
+    background-color: pink;
+  }
+  .container{
+    position: relative;
+    right: 62px;
+  }
+  #plus{
+    position: fixed;
+    left: 700px;
+    top: 113px;
   }
 }
