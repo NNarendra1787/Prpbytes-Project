@@ -28,6 +28,7 @@ h1{
   color: white;
   font-weight: lighter;
   font-size: 2rem;
+  overflow-x: hidden;
 }
 #boldit{
   color: white;
