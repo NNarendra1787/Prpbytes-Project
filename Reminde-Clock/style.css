@@ -643,13 +643,13 @@ body {
 
     .Alarm {
         position: absolute;
-        top: 375px;
+        top: 400px;
         left: 0px;
     }
 
     #Scadule {
         position: absolute;
-        top: 365px;
+        top: 400px;
         right: 20px;
         width: 40%;
         z-index: 2;
@@ -658,7 +658,7 @@ body {
     #ChangePhoto img {
         display: block;
         position: relative;
-        top: 905px;
+        top: 935px;
         left: 0px;
         width: 100%;
     }
