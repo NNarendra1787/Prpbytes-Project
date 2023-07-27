@@ -22,6 +22,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 20px;
+  width: auto;
 }
 
 h1{
@@ -56,7 +57,7 @@ h1{
   background-color: lightblue;
   /* backdrop-filter: blur(2px); */
   position: absolute;
-  height: 100vh;
+  height: 125vh;
   width: 100vw;
   top: 0;
   left: 0;
